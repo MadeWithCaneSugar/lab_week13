@@ -1,17 +1,86 @@
-*       {}
+/* Base background color #511212 */
+/* Sectional background color #7f3509 */
+/* Text color #ffe599 */ 
 
-body        {}
+* {
+    color: #ffe599;
+    background-color: #511212;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+body    {
+    color: #ffe599;
+    background-color: #511212;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: small;
+    margin: 10px;
+    padding: 10px;
 
-body h1     {}
+    justify-content: center;
+}
 
-body h2     {}
+body h2 {
+    background-color: #7f3509;
+}
 
-.originals      {}
+.originals  {
+    background-color: #7f3509;
+    margin: 10px;
+    padding: 10px;
+}
 
-.original-container     {}
+.original-container {
+    background-color: #7f3509;
+    margin: 10px;
+    padding: 10px;
 
-.original-container div     {}
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
 
-.copies     {}
+.original-container div {
+    background-color: #7f3509;
+    margin: 10px;
+}
 
+.original-container div p{
+    background-color: #7f3509;
+    border-color: #ffe599;
+    border-style: dashed;
+    padding: 10px;
+}
 
+.copies {
+    background-color: #7f3509;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+.copies button  {
+    background-color: #7f3509;
+    color: #ffe599;
+    border-color: #ffe599;
+    border-style: dashed;
+    border-width: thick;
+    margin: 10px;
+    padding: 10px;
+}
+
+.copy-container  {
+    background-color: #7f3509;
+    margin: 10px;
+    padding: 10px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.copy-container div p {
+    background-color: #7f3509;
+    padding: 10px;
+}

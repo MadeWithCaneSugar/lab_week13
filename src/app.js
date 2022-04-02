@@ -1,30 +1,21 @@
+//Couldn't remember if these needed to be in functions.
+//I tried putting them in functions, but I could not get them to work.
+//In their current state they are indeed functional however
+
 //Clone
-const clickableDiv = document.querySelectorAll('.original-container')
-const areaCopyTo = document.querySelectorAll('.copy.container')
+const eventDiv = document.querySelectorAll(".original-container div")
+const areaToCloneTo = document.querySelector(".copy-container")
 
-// elementCloner (clickedElement); {
-//     var cloneOfElement = document.querySelector(clickedElement)
-//     cloneOfElement = cloneOfElement.cloneNode(true);
-
-//     insertAdjacentHTML
-// }
-
-// elementCloner()
-
-//Clone w/ Morteza
-const eventDiv = document.querySelectorAll('.original-container div')
-const copyArea = document.querySelector('.copy-container')
-
-eventDiv.forEach(element => element.addEventListener('click', (evt) => {
+eventDiv.forEach(element => element.addEventListener("click", (evt) => {
     console.log(evt)
-    let cloneMaterial = evt.target.parentElement.outerHTML;
-    copyArea.insertAdjacentHTML ("beforeend", cloneMaterial);
+    let cloneItem = evt.target.parentElement.outerHTML;
+    areaToCloneTo.insertAdjacentHTML ("beforeend", cloneItem);
 }))
 
-//Remove w/ Morteza
-const resetButton = document.querySelector('button')
+//Delete
+const deleteClonesButton = document.querySelector("button")
 
-resetButton.addEventListener('click', (evt) => {
+deleteClonesButton.addEventListener("click", (evt) => {
     console.log(evt)
-    copyArea.innerHTML = '';
+    areaToCloneTo.innerHTML = '';
 })
